@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WebAPI2AuthenticationExample.Web")]
+[assembly: AssemblyTitle("ApiService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WebAPI2AuthenticationExample.Web")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCompany("Govt of Alberta")]
+[assembly: AssemblyProduct("ApiService")]
+[assembly: AssemblyCopyright("Copyright © Govt of Alberta 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("42db6c7c-c064-4afa-9e91-d6d2f51e0f83")]
+[assembly: Guid("03bbff3c-8cfc-4fe5-852e-43bacf9d73ad")]
 
 // Version information for an assembly consists of the following four values:
 //

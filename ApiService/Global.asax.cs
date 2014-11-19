@@ -6,18 +6,26 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using ApiService.App_Start;
 
-namespace WebAPI2AuthenticationExample.Web
+namespace ApiService
 {
-    public class WebApiApplication : System.Web.HttpApplication
+    public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
         {
+//            AreaRegistration.RegisterAllAreas();
+//            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+//            RouteConfig.RegisterRoutes(RouteTable.Routes);
+//            BundleConfig.RegisterBundles(BundleTable.Bundles);
+
             AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configure(WebApiConfig.Register); //I AM THE 2nd
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+
         }
     }
 }

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(WebAPI2AuthenticationExample.Web.Startup))]
-
-namespace WebAPI2AuthenticationExample.Web
+[assembly: OwinStartupAttribute(typeof(ApiService.Startup))]
+namespace ApiService
 {
     public partial class Startup
     {

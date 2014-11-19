@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using ApiService.Providers;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using WebAPI2AuthenticationExample.Web.Providers;
+using ApiService.Models;
 
-namespace WebAPI2AuthenticationExample.Web
+namespace ApiService
 {
     public partial class Startup
     {
@@ -41,7 +42,13 @@ namespace WebAPI2AuthenticationExample.Web
             // Enable the application to use a cookie to store information for the signed in user
             // and to use a cookie to temporarily store information about a user logging in with a third party login provider
             app.UseCookieAuthentication(new CookieAuthenticationOptions());
-            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+
+//            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+
+            //app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+            app.UseOAuthAuthorizationServer(OAuthOptions);
+
+            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalBearer);
 
             // Enable the application to use bearer tokens to authenticate users
             app.UseOAuthBearerTokens(OAuthOptions);
@@ -62,4 +69,5 @@ namespace WebAPI2AuthenticationExample.Web
             //app.UseGoogleAuthentication();
         }
     }
+
 }

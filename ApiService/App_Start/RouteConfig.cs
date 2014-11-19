@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace WebAPI2AuthenticationExample.Web
+namespace ApiService
 {
     public class RouteConfig
     {
