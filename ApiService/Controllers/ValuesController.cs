@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Runtime.ExceptionServices;
 using System.Web.Http;
 
 namespace ApiService.Controllers
@@ -23,8 +24,10 @@ namespace ApiService.Controllers
         }
 
         // POST api/<controller>
-        public void Post([FromBody]string value)
+        public IPerson Post([FromBody] IPerson person)
         {
+            return person;
+
         }
 
         // PUT api/<controller>/5
@@ -37,4 +40,11 @@ namespace ApiService.Controllers
         {
         }
     }
+
+    public class IPerson
+    {
+       public string FirstName { get; set; }
+       public string LastName { get; set; }
+    }
+
 }
