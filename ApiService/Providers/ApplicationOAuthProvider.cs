@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 
-namespace AprService.Providers
+namespace WebAPI2AuthenticationExample.Web.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
@@ -53,6 +52,8 @@ namespace AprService.Providers
                 AuthenticationTicket ticket = new AuthenticationTicket(oAuthIdentity, properties);
                 context.Validated(ticket);
                 context.Request.Context.Authentication.SignIn(cookiesIdentity);
+
+                context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
             }
         }
 

@@ -1,8 +1,12 @@
-﻿using Microsoft.Owin;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(AprService.Startup))]
-namespace AprService
+[assembly: OwinStartup(typeof(WebAPI2AuthenticationExample.Web.Startup))]
+
+namespace WebAPI2AuthenticationExample.Web
 {
     public partial class Startup
     {

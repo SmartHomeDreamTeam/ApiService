@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiService", "ApiService.csproj", "{8F2AFCCA-5B71-4912-83D7-326E39FF4290}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiService", "ApiService.csproj", "{8C2C969E-7C2E-4851-B31E-550FB92F8B08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8F2AFCCA-5B71-4912-83D7-326E39FF4290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F2AFCCA-5B71-4912-83D7-326E39FF4290}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F2AFCCA-5B71-4912-83D7-326E39FF4290}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F2AFCCA-5B71-4912-83D7-326E39FF4290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2C969E-7C2E-4851-B31E-550FB92F8B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2C969E-7C2E-4851-B31E-550FB92F8B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2C969E-7C2E-4851-B31E-550FB92F8B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2C969E-7C2E-4851-B31E-550FB92F8B08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

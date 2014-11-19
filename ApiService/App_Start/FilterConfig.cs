@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace AprService
+namespace WebAPI2AuthenticationExample.Web
 {
     public class FilterConfig
     {
